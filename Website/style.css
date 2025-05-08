@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
 /* home */
+
 .header {
     min-height: 100vh;
     width: 100%;
@@ -115,22 +117,23 @@ nav .fa-solid {
 }
 
 /* Style for the logo container */
+
 .logo-container {
-    display: flex; /* Align the image and text horizontally */
-    align-items: center; /* Vertically align the image and text */
-    text-decoration: none; /* Remove underline from the link */
+    display: flex; 
+    align-items: center;
+    text-decoration: none; 
 }
 
 .logo-container img {
-    width: 100px; /* Set the logo size */
-    margin-right: 10px; /* Add spacing between the logo and the text */
+    width: 100px;
+    margin-right: 10px; 
 }
 
 .logo-container p {
-    color: #fff; /* Set text color */
-    font-size: 20px; /* Set font size */
-    font-weight: 600; /* Set font weight */
-    margin: 0; /* Remove default margin */
+    color: #fff; 
+    font-size: 20px; 
+    font-weight: 600; 
+    margin: 0;
 }
 
 .logo-container p:hover {
@@ -270,7 +273,7 @@ nav .fa-solid {
     line-height: 1.6;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .academic-programs {
         padding: 2rem 1rem;
     }
@@ -301,6 +304,23 @@ nav .fa-solid {
     text-align: center;
 }
 
+.course h1 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.course h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: maroon;
+}
+
 .course-col {
     background-color: maroon;
     border-radius: 10px;
@@ -313,14 +333,13 @@ nav .fa-solid {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
-.course-col h3 {
+.course-col h2 {
     font-weight: 800;
     letter-spacing: 5px;
     text-transform: uppercase;
     margin-bottom: 1.5rem;
 }
 
-/* Two-column layout for undergraduate programs */
 .undergraduate {
     flex: 2;
 }
@@ -335,6 +354,7 @@ nav .fa-solid {
 }
 
 /* Stacked columns for graduate and high school */
+
 .stacked-cols {
     flex: 1;
     display: flex;
@@ -364,9 +384,10 @@ nav .fa-solid {
     .two-column-list {
         flex-direction: column;
     }
+    
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1224px) {
     .row {
         flex-direction: column;
     }
@@ -377,6 +398,123 @@ nav .fa-solid {
 
     .stacked-cols {
         gap: 1.5rem;
+    }
+}
+
+/* ACADEMIC PROGRAMS / undergrad courses */
+
+.undergraduate-programs {
+    width: 100%;
+    padding: 20px;
+}
+
+.colleges-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px; 
+}
+
+.college {
+    margin-bottom: 20px;
+}
+
+.college h4 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.college ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.college li {
+    margin-bottom: 10px;
+    display: flex;
+    text-align: start;
+    font-size: 14px;
+}
+
+/* graduate*/
+
+.graduate-programs {
+    width: 100%;
+    padding: 20px;
+}
+
+.graduate-programs h4 {
+    font-size: 20px;
+    padding: 15px;
+    letter-spacing: 1px;
+}
+
+.graduate-programs h5 {
+    font-size: 18px;
+    padding: 15px;
+    letter-spacing: 1px;
+}
+
+.graduate-programs #doctorate, #masters, #gdp {
+    font-size: 16px;
+}
+
+.grad-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+}
+
+/* high school */
+
+.shs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+}
+
+.hs-programs {
+    width: 100%;
+    padding: 20px;
+}
+
+.hs-programs h2 {
+    font-weight: 800;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.hs-programs h3 {
+    font-size: 20px;
+}
+
+.hs-programs h4 {
+    font-size: 16px;
+    padding: 15px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 1224px) {
+    .undergraduate-programs, .graduate-programs, .hs-programs {
+        padding: 10px; 
+        flex-direction: column;
+    }
+
+    .undergraduate-programs h1, 
+    .graduate-programs h1, 
+    .hs-programs h1 {
+        font-size: 1.8rem; 
+        margin-bottom: 1.5rem;
+    }
+
+    .undergraduate-programs p, 
+    .graduate-programs p, 
+    .hs-programs p {
+        font-size: 1rem; 
+        line-height: 1.5; 
     }
 }
 
@@ -689,25 +827,20 @@ nav .fa-solid {
 .about-row {
     display: flex;
     flex-direction: column;
-    gap: 40px; /* Space between containers */
+    gap: 40px;
 }
 
 .about-col {
     display: flex;
     align-items: center;
-    gap: 30px; /* Space between image and text */
-}
-
-/* Makes every even numbered about-col reverse the order */
-.about-col:nth-child(even) {
-    flex-direction: row-reverse;
+    gap: 30px;
 }
 
 .about-col img {
-    width: 400px; /* Adjust as needed */
-    height: auto;
+    width: 100%; 
+    height: 400px;
     object-fit: cover;
-    border-radius: 10px; /* Optional: for rounded corners */
+    border-radius: 10px;
 }
 
 .about-col p {
@@ -716,6 +849,20 @@ nav .fa-solid {
     line-height: 1.6;
     color: #333;
     margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-col li {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-top: 20px;
+    padding-left: 20px;
+    justify-content: center;
+    align-items: center;
+    list-style-type: lower-alpha;
 }
 
 .hero-btn.peach-btn {
@@ -742,9 +889,8 @@ nav .fa-solid {
     border: 1px solid #fff;
 }
 
-
-
 /* Blog content */
+
 .blog-content {
     width: 80%;
     padding: 60px 0;
@@ -822,6 +968,7 @@ nav .fa-solid {
 }
 
 /* contact us */
+
 .location {
     width: 80%;
     padding: 80px 0;

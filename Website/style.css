@@ -497,27 +497,6 @@ nav .fa-solid {
     letter-spacing: 1px;
 }
 
-@media (max-width: 1224px) {
-    .undergraduate-programs, .graduate-programs, .hs-programs {
-        padding: 10px; 
-        flex-direction: column;
-    }
-
-    .undergraduate-programs h1, 
-    .graduate-programs h1, 
-    .hs-programs h1 {
-        font-size: 1.8rem; 
-        margin-bottom: 1.5rem;
-    }
-
-    .undergraduate-programs p, 
-    .graduate-programs p, 
-    .hs-programs p {
-        font-size: 1rem; 
-        line-height: 1.5; 
-    }
-}
-
 /*  campuses */
 
 .campus {

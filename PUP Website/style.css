@@ -1137,3 +1137,82 @@ nav .fa-solid {
 .corevalues td,tr:hover {
     color: orangered;
 }
+
+/* history content */
+
+/* Logo and Symbols Section */
+.logo-symbols {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.logo-symbols h2.section-title {
+    font-size: 2.5rem;
+    color: maroon;
+    text-align: left; 
+    margin-bottom: 30px;
+}
+
+.logo-symbols .subsection-title {
+    font-size: 1.8rem;
+    color: maroon;
+    text-align: left; 
+    margin-bottom: 20px;
+}
+
+.logo-symbols .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-symbols .image-container img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px; 
+    object-fit: contain; 
+    border-radius: 10px; 
+}
+
+.logo-symbols p {
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: center; 
+    margin-bottom: 20px;
+    color: #555; 
+}
+
+.logo-symbols .caption {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Specific Sections Styling */
+.historical-logos,
+.mural-section,
+.pylon-section,
+.obelisk-section,
+.centenary-section {
+    margin-bottom: 50px;
+}
+
+.historical-logos .image-container img,
+.mural-section .image-container img,
+.pylon-section .image-container img,
+.obelisk-section .image-container img,
+.centenary-section .image-container img {
+    max-width: 80%; 
+    height: auto;
+    margin: 0 auto;
+}
+
+.historical-logos p,
+.mural-section p,
+.pylon-section p,
+.obelisk-section p,
+.centenary-section p {
+    margin-bottom: 15px;
+}

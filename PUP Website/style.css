@@ -1195,3 +1195,36 @@ nav .fa-solid {
 }
 
 /* pup hymn content */
+
+.hymn-content {
+    margin: 0 50px 0 50px;
+    padding: 20px;
+}
+
+.hymn-content pre {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-size: 16px;
+}
+
+.pup-hymn {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.hymn-container {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.hymn-container video {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+    padding: 20px;
+}
